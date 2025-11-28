@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Noto Sans", sans-serif;
+  background-color: #141118;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b1723;
+  padding: 15px 60px;
+  border-bottom: 1px solid #302839;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  color: #fc7388;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #fc7388;
+}
+
+/* Get Started Button */
+#getStartedBtn {
+  background-color: #8013ec;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Gradient button with animation */
+.gradient-btn {
+  background: linear-gradient(90deg, #7f13ec, #5120f5, #ff3b84);
+  background-size: 200% 200%; /* makes the gradient move */
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* Animated gradient for website name */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(90deg, #7f13ec, #5120f5, #ff3b84);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 5s ease infinite;
+}
+
+
+.gradient-btn:hover {
+  animation: gradient-slide 2s linear infinite; /* moves the colors */
+  transform: scale(1.05); /* makes it slightly bigger on hover */
+}
+
+@keyframes gradient-slide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#getStartedBtn:hover {
+  background-color: #a54bff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1529634892446-2aeb57efcdee?auto=format&fit=crop&w=1350&q=80")
+      center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.hero-content span {
+  color: #fc7388;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #dcdcdc;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #8013ec;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #a54bff;
+  transform: scale(1.05);
+}
+
+/* Sections */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fc7388;
+}
+
+p {
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+/* How It Works */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.step {
+  background: #211c27;
+  padding: 25px;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.step:hover {
+  transform: scale(1.05);
+  background-color: #2b2435;
+}
+
+.step i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8013ec;
+}
+
+/* Product Section */
+.btn-secondary {
+  background-color: #fc7388;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #ff8da3;
+}
+
+/* Footer */
+footer {
+  background-color: #1b1723;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ab9db9;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perceva | How It Works</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/cc3140ab58.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Animated gradient text & icons */
+    @keyframes gradient-move {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .animated-gradient {
+      background: linear-gradient(90deg, #7f13ec, #5120f5, #ff3b84);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-move 5s ease infinite;
+      display: inline-block;
+    }
+
+    /* Eye and name match perfectly */
+    .brand-logo i {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: inherit;
+      background-size: inherit;
+      animation: inherit;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- NAVBAR -->
+  <header class="flex items-center justify-between border-b border-[#302839] px-10 py-4 sticky top-0 z-50 bg-[#141118]">
+    <div class="flex items-center gap-4 text-white">
+      <!-- Eye Logo + Text SAME STYLE -->
+      <h1 class="flex items-center gap-3 text-5xl md:text-6xl font-black tracking-tight animated-gradient brand-logo">
+        <i class="fa-solid fa-eye"></i>
+        Perceva
+      </h1>
+    </div>
+
+    <nav class="flex items-center gap-8 text-base font-medium">
+      <a href="index.html" class="hover:text-[#ff3b84]">Home</a>
+      <a href="index.html#mission" class="hover:text-[#ff3b84]">Our Mission</a>
+      <a href="how.html" class="hover:text-[#ff3b84]">How It Works</a>
+      <a href="products.html" class="hover:text-[#ff3b84]">Products</a>
+      <a href="contact.html" class="hover:text-[#ff3b84]">Contact</a>
+    </nav>
+
+    <button class="getStartedBtn gradient-btn text-white font-bold px-6 py-2 rounded-lg transition-all">
+      Get Started
+    </button>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="px-8 py-20 text-center bg-[#141118]">
+    <h2 class="text-4xl font-bold mb-6 text-[#ff3b84]">Our Products</h2>
+    <p class="max-w-3xl mx-auto text-[#cfcfcf] text-lg mb-16">
+      Perceva provides multiple AI-powered navigation solutions designed for comfort, safety, and accessibility.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <!-- Smart Glasses Card -->
+      <div class="product-card bg-[#211c27] p-8 rounded-xl border border-[#473b54] flex flex-col items-center text-center">
+        <div class="text-[#a54bff] text-5xl mb-4">
+          <i class="fa-solid fa-glasses"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Smart Glasses</h3>
+        <p class="text-[#b9a9cc] mb-6 text-lg leading-relaxed">
+          Lightweight AI-powered glasses that identify obstacles and guide users through real-time audio feedback.
+        </p>
+        <div class="w-full mt-auto">
+          <div class="flex justify-center gap-4 mb-6">
+            <span class="bg-[#2a2333] text-[#a54bff] px-3 py-1 rounded-full text-sm font-medium">AI Vision</span>
+            <span class="bg-[#2a2333] text-[#a54bff] px-3 py-1 rounded-full text-sm font-medium">Audio Guidance</span>
+            <span class="bg-[#2a2333] text-[#a54bff] px-3 py-1 rounded-full text-sm font-medium">Lightweight</span>
+          </div>
+          <button class="w-full bg-gradient-to-r from-[#7f13ec] to-[#5120f5] text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Laptop Integration Card -->
+      <div class="product-card bg-[#211c27] p-8 rounded-xl border border-[#473b54] flex flex-col items-center text-center">
+        <div class="text-[#a54bff] text-5xl mb-4">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Laptop Integration</h3>
+        <p class="text-[#b9a9cc] mb-6 text-lg leading-relaxed">
+          Works seamlessly with webcams for home or office use, providing real-time visual assistance and navigation support.
+        </p>
+        <div class="w-full mt-auto">
+          <div class="flex justify-center gap-4 mb-6">
+            <span class="bg-[#2a2333] text-[#a54bff] px-3 py-1 rounded-full text-sm font-medium">Webcam Support</span>
+            <span class="bg-[#2a2333] text-[#a54bff] px-3 py-1 rounded-full text-sm font-medium">Real-time Processing</span>
+            <span class="bg-[#2a2333] text-[#a54bff] px-3 py-1 rounded-full text-sm font-medium">Desktop App</span>
+          </div>
+          <button class="w-full bg-gradient-to-r from-[#7f13ec] to-[#5120f5] text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Info Section -->
+    <div class="max-w-4xl mx-auto mt-16 bg-[#1b1723] p-8 rounded-xl border border-[#473b54]">
+      <h3 class="text-2xl font-bold text-[#a54bff] mb-4">All Products Include</h3>
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        <div class="flex items-start gap-3">
+          <div class="text-[#ff3b84] mt-1">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Advanced AI Algorithms</h4>
+            <p class="text-[#b9a9cc] text-sm">Real-time obstacle detection and pathfinding</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="text-[#ff3b84] mt-1">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Multi-Platform Support</h4>
+            <p class="text-[#b9a9cc] text-sm">Works across all your devices seamlessly</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="text-[#ff3b84] mt-1">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Voice Guidance</h4>
+            <p class="text-[#b9a9cc] text-sm">Clear audio instructions for safe navigation</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="text-[#ff3b84] mt-1">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Regular Updates</h4>
+            <p class="text-[#b9a9cc] text-sm">Continuous improvements and new features</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[#302839] py-8 text-center text-[#ab9db9] bg-[#141118]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <a class="text-[#ab9db9] hover:text-[#ff3b84] transition-colors" href="#">Privacy Policy</a>
+          <a class="text-[#ab9db9] hover:text-[#ff3b84] transition-colors" href="#">Terms of Service</a>
+          <a class="text-[#ab9db9] hover:text-[#ff3b84] transition-colors" href="#">Contact Us</a>
+        </div>
+        <p class="text-[#ab9db9]">© 2025 Perceva. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AUTH MODAL -->
+  <div id="authModal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+    <div class="bg-[#1b1723] p-8 rounded-2xl w-[90%] max-w-md shadow-lg relative">
+      <button id="closeModal" class="absolute right-4 top-3 text-gray-400 hover:text-white">✕</button>
+      <h2 class="text-2xl font-bold mb-4 text-[#a54bff]" id="formTitle">Sign Up</h2>
+      <form class="flex flex-col gap-3">
+        <input type="text" placeholder="Username" class="p-2 rounded bg-[#211c27] border border-[#473b54] focus:outline-none focus:ring-2 focus:ring-[#a54bff]" />
+        <input type="email" placeholder="Email" class="p-2 rounded bg-[#211c27] border border-[#473b54] focus:outline-none focus:ring-2 focus:ring-[#a54bff]" />
+        <input type="password" placeholder="Password" class="p-2 rounded bg-[#211c27] border border-[#473b54] focus:outline-none focus:ring-2 focus:ring-[#a54bff]" />
+        <button type="submit" class="gradient-btn py-2 rounded-lg font-bold mt-2">Continue</button>
+      </form>
+      <p class="text-sm text-[#b9a9cc] mt-4 text-center">
+        Already have an account?
+        <a id="loginLink" href="#" class="text-[#ff3b84] hover:underline">Log in</a>
+      </p>
+      <p class="text-xs text-[#9b8cab] mt-2 text-center">
+        <a id="forgotLink" href="#" class="hover:text-[#ff3b84]">Forgot your password?</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

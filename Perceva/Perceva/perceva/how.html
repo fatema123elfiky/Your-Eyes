@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perceva | How It Works</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/cc3140ab58.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Animated gradient text & icons */
+    @keyframes gradient-move {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .animated-gradient {
+      background: linear-gradient(90deg, #7f13ec, #5120f5, #ff3b84);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-move 5s ease infinite;
+      display: inline-block;
+    }
+
+    /* Eye and name match perfectly */
+    .brand-logo i {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: inherit;
+      background-size: inherit;
+      animation: inherit;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- NAVBAR -->
+  <header class="flex items-center justify-between border-b border-[#302839] px-10 py-4 sticky top-0 z-50 bg-[#141118]">
+    <div class="flex items-center gap-4 text-white">
+      <!-- Eye Logo + Text SAME STYLE -->
+      <h1 class="flex items-center gap-3 text-5xl md:text-6xl font-black tracking-tight animated-gradient brand-logo">
+        <i class="fa-solid fa-eye"></i>
+        Perceva
+      </h1>
+    </div>
+
+    <nav class="flex items-center gap-8 text-base font-medium">
+      <a href="index.html" class="hover:text-[#ff3b84]">Home</a>
+      <a href="index.html#mission" class="hover:text-[#ff3b84]">Our Mission</a>
+      <a href="how.html" class="hover:text-[#ff3b84]">How It Works</a>
+      <a href="products.html" class="hover:text-[#ff3b84]">Products</a>
+      <a href="contact.html" class="hover:text-[#ff3b84]">Contact</a>
+    </nav>
+
+    <button class="getStartedBtn gradient-btn text-white font-bold px-6 py-2 rounded-lg transition-all">
+      Get Started
+    </button>
+  </header>
+
+<!-- CONTENT -->
+<section class="px-8 py-20 text-center bg-[#141118]">
+  <h2 class="text-4xl font-bold mb-6 text-[#ff3b84]">How Perceva Works</h2>
+  <p class="max-w-3xl mx-auto text-[#cfcfcf] text-lg mb-16">
+    Perceva uses a combination of AI vision, real-time data processing, and audio feedback to help visually impaired users navigate safely and independently.
+  </p>
+
+  <!-- Step-by-Step Process -->
+  <div class="max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 gap-8">
+
+      <!-- Step 1 -->
+      <div class="flex items-start gap-6 bg-[#211c27] p-6 rounded-xl border border-[#473b54]">
+        <div class="text-[#a54bff] text-2xl flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path>
+          </svg>
+        </div>
+        <div class="text-left">
+          <h3 class="text-white text-xl font-bold mb-2">Capture Your Surroundings</h3>
+          <p class="text-[#b9a9cc]">Use your smart glasses or laptop camera to capture your surroundings.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex items-start gap-6 bg-[#211c27] p-6 rounded-xl border border-[#473b54]">
+        <div class="text-[#a54bff] text-2xl flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M248,124a56.11,56.11,0,0,0-32-50.61V72a48,48,0,0,0-88-26.49A48,48,0,0,0,40,72v1.39a56,56,0,0,0,0,101.2V176a48,48,0,0,0,88,26.49A48,48,0,0,0,216,176v-1.41A56.09,56.09,0,0,0,248,124ZM88,208a32,32,0,0,1-31.81-28.56A55.87,55.87,0,0,0,64,180h8a8,8,0,0,0,0-16H64A40,40,0,0,1,50.67,86.27,8,8,0,0,0,56,78.73V72a32,32,0,0,1,64,0v68.26A47.8,47.8,0,0,0,88,128a8,8,0,0,0,0,16,32,32,0,0,1,0,64Zm104-44h-8a8,8,0,0,0,0,16h8a55.87,55.87,0,0,0,7.81-.56A32,32,0,1,1,168,144a8,8,0,0,0,0-16,47.8,47.8,0,0,0-32,12.26V72a32,32,0,0,1,64,0v6.73a8,8,0,0,0,5.33,7.54A40,40,0,0,1,192,164Zm16-52a8,8,0,0,1-8,8h-4a36,36,0,0,1-36-36V80a8,8,0,0,1,16,0v4a20,20,0,0,0,20,20h4A8,8,0,0,1,208,112ZM60,120H56a8,8,0,0,1,0-16h4A20,20,0,0,0,80,84V80a8,8,0,0,1,16,0v4A36,36,0,0,1,60,120Z"></path>
+          </svg>
+        </div>
+        <div class="text-left">
+          <h3 class="text-white text-xl font-bold mb-2">AI-Powered Analysis</h3>
+          <p class="text-[#b9a9cc]">Our advanced AI algorithms analyze the captured images to identify obstacles, pathways, and points of interest.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex items-start gap-6 bg-[#211c27] p-6 rounded-xl border border-[#473b54]">
+        <div class="text-[#a54bff] text-2xl flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M201.89,62.66A103.43,103.43,0,0,0,128.79,32H128A104,104,0,0,0,24,136v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V152a24,24,0,0,0-24-24H40.36A88,88,0,0,1,128,48h.67a87.71,87.71,0,0,1,87,80H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h16a24,24,0,0,0,24-24V136A103.41,103.41,0,0,0,201.89,62.66ZM64,144a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V144Zm152,48a8,8,0,0,1-8,8H192a8,8,0,0,1-8-8V152a8,8,0,0,1,8-8h24Z"></path>
+          </svg>
+        </div>
+        <div class="text-left">
+          <h3 class="text-white text-xl font-bold mb-2">Real-Time Guidance</h3>
+          <p class="text-[#b9a9cc]">Receive real-time audio guidance through your smart glasses or headphones, ensuring you stay on course.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex items-start gap-6 bg-[#211c27] p-6 rounded-xl border border-[#473b54]">
+        <div class="text-[#a54bff] text-2xl flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M229.33,98.21,53.41,33l-.16-.05A16,16,0,0,0,32.9,53.25a1,1,0,0,0,.05.16L98.21,229.33A15.77,15.77,0,0,0,113.28,240h.3a15.77,15.77,0,0,0,15-11.29l23.56-76.56,76.56-23.56a16,16,0,0,0,.62-30.38ZM224,113.3l-76.56,23.56a16,16,0,0,0-10.58,10.58L113.3,224h0l-.06-.17L48,48l175.82,65.22.16.06Z"></path>
+          </svg>
+        </div>
+        <div class="text-left">
+          <h3 class="text-white text-xl font-bold mb-2">Safe and Confident Navigation</h3>
+          <p class="text-[#b9a9cc]">Perceva your environment safely and confidently, knowing NaviSight is there to assist you every step of the way.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-[#302839] py-8 text-center text-[#ab9db9] bg-[#141118]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col gap-6">
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a class="text-[#ab9db9] hover:text-[#ff3b84] transition-colors" href="#">Privacy Policy</a>
+        <a class="text-[#ab9db9] hover:text-[#ff3b84] transition-colors" href="#">Terms of Service</a>
+        <a class="text-[#ab9db9] hover:text-[#ff3b84] transition-colors" href="#">Contact Us</a>
+      </div>
+      <p class="text-[#ab9db9]">© 2025 Perceva. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- AUTH MODAL -->
+<div id="authModal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+  <div class="bg-[#1b1723] p-8 rounded-2xl w-[90%] max-w-md shadow-lg relative">
+    <button id="closeModal" class="absolute right-4 top-3 text-gray-400 hover:text-white">✕</button>
+    <h2 class="text-2xl font-bold mb-4 text-[#a54bff]" id="formTitle">Sign Up</h2>
+    <form class="flex flex-col gap-3">
+      <input type="text" placeholder="Username" class="p-2 rounded bg-[#211c27] border border-[#473b54] focus:outline-none focus:ring-2 focus:ring-[#a54bff]" />
+      <input type="email" placeholder="Email" class="p-2 rounded bg-[#211c27] border border-[#473b54] focus:outline-none focus:ring-2 focus:ring-[#a54bff]" />
+      <input type="password" placeholder="Password" class="p-2 rounded bg-[#211c27] border border-[#473b54] focus:outline-none focus:ring-2 focus:ring-[#a54bff]" />
+      <button type="submit" class="gradient-btn py-2 rounded-lg font-bold mt-2">Continue</button>
+    </form>
+    <p class="text-sm text-[#b9a9cc] mt-4 text-center">
+      Already have an account? <a id="loginLink" href="#" class="text-[#ff3b84] hover:underline">Log in</a>
+    </p>
+    <p class="text-xs text-[#9b8cab] mt-2 text-center">
+      <a id="forgotLink" href="#" class="hover:text-[#ff3b84]">Forgot your password?</a>
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
