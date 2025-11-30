@@ -1,0 +1,35 @@
+person
+chair
+car
+dining table
+cup
+bottle
+bowl
+handbag
+truck
+bench
+backpack
+book
+cell phone
+tv
+couch
+dog
+knife
+sports ball
+traffic light
+cat
+umbrella
+bus
+bed
+train
+fork
+spoon
+laptop
+motorcycle
+bicycle
+sandwich
+banana
+stop sign
+orange
+carrot
+apple
